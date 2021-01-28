@@ -2,7 +2,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link rel="shortcut icon" href="icon.png">
+<link rel="shortcut icon" href="logo.png" type="image/png">
 
 
 <title>Alison Garrett-Engele</title>
@@ -17,28 +17,184 @@
 
 </head>
 <body>
-<div class="wrapper">
+  <div class="break-header">
+    <div id="toc-holder" class="toc-holder">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+        <li>
+          <a href="#involvement">Involvement</a>
+        </li>
+        </div>
+        </div>
 
+<div class="break"></div>
+<div class="wrapper">
+<div class="about" id="about">
 <div class="prof-box"><p>
  <h1>Alison Garrett-Engele</h1>
- <h5>Senior at Macalester College</h5>
-<div class="line-break"></div>
+ <h5>Macalester College</h5>
+<div class="line-breakheader"></div>
 
- <p> I am a Senior at Macalester College with a major in computer science and a concentration in cognitive science. I became interested in programming after participating in weekly Girls Who Code meetings held in my highschool's basement. Since then, I have participated in group projects such as making a mobile app for my hometown's historical society and modifying a NST as well as held a research position as a Clare Boothe Scholar and an internship for Honeywell. At Honeywell, I worked with the application engineering team to migrate and develop applications on our Niagara framework for building HVAC use cases. As a Clare Boothe Scholar, I performed research at Macalester creating an accessible version of Wonder Workshop’s Blockly application for low vision middle schoolers.</p>
-<p> To this day, I still participate in Girls Who Code through Macalester’s College Loop, and since high school, I’ve joined Women in Stem. I enjoy being a part of these communities because they act as a consistent reminder that programming is supposed to be about challenging oneself and enjoying the process of trial and error.</p>
+ <p> I am a Senior at Macalester College with a major in computer science and a concentration in cognitive science. I became interested in programming after participating in weekly Girls Who Code meetings held in my highschool's basement. Since then, I have held an internship at Honeywell, a research position at Macalester, and developed numerous academic and personal projects ranging from games to NST. I am interested in software design, especifally accessibilty design, and ai from a programming and psychological perspective.</p>
+ <p> When I'm not coding, I enjoy reading, writing poetry, and being outdoors!></p>
  <p><a href = "C:\Users\alisongarrett-engele\Documents\agarrettengele_resume.pdf"></a></p>
 
  <div class="social-icons">
 
- <!-- include your social media links by changing the URL on the text that says CHANGE ME here -->
   <a href="https://github.com/alisonege" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
   <a href="https://www.linkedin.com/in/alison-garrett-engele/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 
-  <h5>Projects</h5>
-  <div class="line-break"></div>
+
 </div>
  </div>
-</div>
+ </div>
+ </div>
 
+<div class="break"></div>
+<div class="projects" id="projects">
+ <h4>Research and Projects</h4>
+ <div class="line-break"></div>
+ <div class="grid-container">
+   <div class="grid-child">
+     <a href="https://github.com/alisonege/comp484-final-project" target="_blank">
+       <img src="adam_cat.png" alt="Cat and Van Gogh: Adam optimizer">
+     </a>
+   </div>
+   <div class="grid-child">
+       <h2>Fall 2020</h2>
+       <h3>COMP 484-01: Intro to AI</h3>
+       <h3>Project: Painting for the Lazy: Neural Style Transfer Exploration and Comparison </h3>
+       <p>For this team project, three of my fellow students and I implemented and modified an NST script in a Google Colab notebook based off of previous work performed by Yuan (2018). We used the VGG-19 model and custom gradient descent functions to compare different optimizers and intermediate layers of the VGG-19 model. This entailed first preprocessing the input images through scaling, normalization, and resizing the arrays to be compatible with the batch processing utilized by Eager Execution. Then, we could quantitatively and qualitatively analyze which optimizers and layers performed best. </p>
+       <p><b> Click on the image to see my code and more!</b></p>
+       <span class="skill">tf.keras</span>
+       <span class="skill">Python</span>
+       <span class="skill">Tensorflow Eager Execution</span>
+       <span class="skill">VGG-19</span>
+     </div>
+ </div>
+
+ <div class="grid-container">
+   <div class="grid-child">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgrN9mzHPHAAWkX-tdbT98GWEuI4KX1k7GkAP-c_QDL0hj3LI5rh4L7t9-pf_ZNyyphnP7hYzzvneKwXpR5jQMEjKQBlS2QShCxw&usqp=CAU&ec=45768321" alt="Spyder 5 Controller">
+   </div>
+   <div class="grid-child">
+       <h2>Summer 2020</h2>
+       <h3>Honeywell Application Engineer Intern</h3>
+       <p>At Honeywell, I worked with the application engineering team to migrate and develop applications on our Niagara framework for building HVAC use cases. I created the back-end code necessary for migrating the balancing process for the Spyder 5 controller to HTML 5. Specifically, I programmed balancing support for the new Spyder 5 Controller using a mixin class and tags to access device points; developed set, override, and auto actions for controller points; and coded actions to backup and restore device data.</p>
+       <p><b> Due to Honeywell's privacy and security reasons, I am unable to share the code I worked on.</b></p>
+       <span class="skill">Javascript</span>
+       <span class="skill">Niagara</span>
+       <span class="skill">SVN</span>
+       <span class="skill">HTML</span>
+     </div>
+ </div>
+
+ <div class="grid-container">
+   <div class="grid-child">
+     <a href="https://github.com/alisonege/personalized-recipe-lookup" target="_blank">
+       <img class="recipe-image" src="recipe_ventures_homescreen.png" alt="Recipe Ventures homescreen">
+     </a>
+   </div>
+   <div class="grid-child">
+       <h2>Spring 2020</h2>
+       <h3>Personal Projects: Recipe Ventures </h3>
+       <p>Recipe Ventures is a recipe look-up Android app. It prompts a user to enter any snack/meal/food of interest and then adds it to a home screen list. A user can then click on the given input and a specific recipe with a title, photo, and instructions will appear. If the recipe is unsatisfactory, a user can click to find another recipe until they are happy. This project along with others like making my own Minesweeper game (check out my repo!) improved my Kotlin and Android skills.</p>
+       <p><<b>Click on the image to see my code and more!</b></p>
+       <span class="skill">Kotlin</span>
+     </div>
+ </div>
+
+ <div class="grid-container">
+   <div class="grid-child">
+     <a href="https://github.com/milnel2/blocks4alliOS" target="_blank">
+       <img src="https://milnel2.github.io/img/portfolio/blocks.png" alt="Blocks4All">
+     </a>
+   </div>
+   <div class="grid-child">
+       <h2>Summer 2019</h2>
+       <h3>Research: Expanding Blocks4All</h3>
+       <h3>Clare Boothe Luce Scholar</h3>
+       <p>For this application, I worked with a team to create an accessible version of Wonder Workshop's Blockly application. This app encourages youth to learn block-based programming, but it is not accessible for low vision and blind students. My Professor Lauren R. Milne began the process of creating Blocks4All as a graduate student. My role this summer was to expand the backend to enable students to save, load, create functions, and utilize variables to make the robot Dash do whatever they want. Moreover, I provided support for VoiceOver and Switch Control so low vision and blind students can more easily navigate the app. I performed this research as a Clare Boothe Luce Scholar, which was a scholarship awarded to eight students at Macalester College in 2019.</p>
+       <p><<b>Click on the image to see my code and more!</b></p>
+       <span class="skill">Swift</span>
+     </div>
+ </div>
+
+ <div class="grid-container">
+   <div class="grid-child">
+     <a href="https://github.com/jcrayton/nessieRepo" target="_blank">
+       <img src="https://www.lifewire.com/thmb/WyY73e7mB43ADBmfSUb6TqDWdqM=/1919x1027/filters:no_upscale():max_bytes(150000):strip_icc()/001-copy-or-move-all-events-google-calendar-11721812-5c8ff111c9e77c0001eb1c90.png" alt="Nessie Calendar">
+     </a>
+   </div>
+   <div class="grid-child">
+       <h2>Fall 2018</h2>
+       <h3>COMP 225-01: Software Development</h3>
+       <h3>Nessie: Your Personal Calendar Assistant</h3>
+       <p> I created my calendar application along with my Software Development classmates. We programmed a scheduling algorithm that randomly finds free time on students’ google calendars based on how often and for how long they want to work on assignments. I primarily acted as a frontend developer, using Bootstrap to create an interactive assignment planner that easily allows users to schedule assignments.</p>
+       <p><<b>Click on the image to see my code and more!</b></p>
+       <span class="skill">Python</span>
+       <span class="skill">Flask</span>
+       <span class="skill">Bootstrap</span>
+     </div>
+ </div>
+
+ <div class="grid-container">
+   <div class="grid-child">
+     <a href="https://github.com/leedia/needham-walk" target="_blank">
+       <img src="https://narmassociation.org/wp-content/uploads/2019/09/Needham-Historical-Society.jpg" alt="Needham Historical Society">
+     </a>
+   </div>
+   <div class="grid-child">
+       <h2>October 2014 - June 2015</h2>
+       <h3>Team Developer</h3>
+       <p>I launched 'The Needham Historical Walk App' along with three other members of Needham High School’s Girls Who Code organization along with the support of TripAdvisor. This mobile application describes past historical sites of Needham in order to encourage Needham residents investment in their community. My tasks ranged from communicating with the staff at Needham’s History and Science Museum as well as adding functionality so that users can locate specific sites on Google Maps, and then receive directions based on their personal location.</p>
+       <p><<b> Click on the image to see my code and more!</b></p>
+       <span class="skill">web</span>
+       <span class="skill">Android</span>
+       <span class="skill">iOS</span>
+     </div>
+ </div>
+ </div>
+
+<p><p><p><p><p><p><p><
+
+<div class="break"></div>
+<div class="resume" id="resume">
+ <h4>Resume</h4>
+ <div class="line-break"></div>
+ <div class="aligncenter">
+    <img src="agarrettengele_resume.pdf" style="width: 1000px; height: 1200px;" alt="resume">
+    </div>
+    </div>
+
+   <p><p><p><p><p><p><p><
+   <div class="break"></div>
+
+  <div class="wrapper">
+    <div class="involvement" id="involvement">
+    <div class="prof-box"><p>
+      <h1>Interests and Extracurriculars</h1>
+      <div class="line-break"></div>
+        <span class="org">Girls Who Code</span></br>
+        <span class="org">Technovation</span>
+        <span class="org">Women* In STEM</span>
+        <span class="org">Hack the Gap Advocacy in Action Hackathon</span>
+        <span class="org">Macathon</span>
+        <span class="org">Accessibility Programming</span>
+        <span class="org">AI</span>
+        <span class="org">Software Design</span>
+    </div>
+  </div>
+  </div>
+
+<p><p><p>
+<div class="break"></div>
 </body>
 </html>
